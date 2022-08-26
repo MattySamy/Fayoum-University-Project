@@ -1,4 +1,4 @@
-# University-Website-Using-Python
+# University-Website
 
 ## Get In Touch
 Have any problem? Don't hesitate to connect... <br>
