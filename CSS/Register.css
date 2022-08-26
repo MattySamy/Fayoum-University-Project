@@ -1,0 +1,367 @@
+:root {
+    --bg1: #020204;
+    --bg2: #323234;
+    --boxShadow: #010103;
+    --Shadow1: #040406;
+    --Shadow2: #444446;
+    --S1forI: #2a2a2c;
+    --S2forI: #020305;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--bg1), var(--bg2));
+}
+
+.contain {
+    width: 80%;
+    margin: auto;
+}
+
+#container {
+    background: linear-gradient(140deg, var(--bg2), var(--bg1));
+    box-shadow: 0 0 8px 6px var(--boxShadow);
+    border-radius: 0px 0px 32px 32px;
+    padding: 20px;
+}
+
+#id,
+#email,
+#lock {
+    width: 240px;
+    padding-left: 4px;
+    height: 44px;
+    border-radius: 16px;
+    background: none;
+    margin: 16px;
+    box-shadow: inset 4px 4px 8px var(--Shadow1), inset -4px -4px 8px var(--Shadow2);
+    color: #777;
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    background: none;
+    height: 42px;
+    outline: none;
+    padding-left: 6px;
+    color: #777;
+}
+
+#sign_up {
+    font-family: sans-serif;
+    margin: 32px auto;
+    color: #4f7afe;
+}
+
+h4 {
+    font-size: 14px;
+    color: #777;
+    margin: 0 0 16px 0;
+}
+
+#social_icon i {
+    margin: 0 11px;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 8px var(--S1forI), inset -3px -3px 8px var(--S2forI), 1px 1px 2px var(--S2forI), -1px -1px 2px var(--S1forI);
+    color: #4f7af1;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#social_icon i:hover {
+    transform: scale(1.3);
+}
+
+#social_icon i:active {
+    transform: scale(0.9);
+}
+
+#signUpBt {
+    margin: 16px;
+    font-size: 20px;
+    color: #4f7afe;
+    border: none;
+    width: 220px;
+    height: 38px;
+    background: none;
+    border-radius: 48px;
+    box-shadow: 4px 4px 8px var(--Shadow1), -4px -4px 8px var(--Shadow2);
+    outline: none;
+    cursor: pointer;
+}
+
+#signUpBt:hover {
+    transform: scale(1.1);
+}
+
+#signUpBt:active {
+    transform: scale(0.9);
+}
+
+#login:hover {
+    box-shadow: 5px 5px 8px var(--Shadow1), -5px -5px 8px var(--Shadow2);
+}
+
+#login:active {
+    box-shadow: inset 4px 4px 8px var(--Shadow1), inset -4px -4px 8px var(--Shadow2);
+    font-size: 16px;
+    border: none;
+}
+
+#foot {
+    margin: 16px auto;
+    color: #777;
+    font-size: 16px;
+}
+
+#sign {
+    color: #4f7afe;
+}
+
+#mode {
+    margin-bottom: 0rem;
+}
+
+#mode button {
+    padding: 6px;
+    border-radius: 6px;
+    background: none;
+    border: none;
+    box-shadow: 4px 4px 8px var(--Shadow1), -4px -4px 8px var(--Shadow2);
+    letter-spacing: 1px;
+}
+
+#mode button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#mode button:active {
+    transform: scale(0.9);
+}
+
+#drk {
+    display: none;
+    color: #112;
+}
+
+#lt {
+    color: #eef;
+}
+
+#Home i {
+    margin: 0 11px;
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 8px var(--S1forI), inset -3px -3px 8px var(--S2forI), 1px 1px 2px var(--S2forI), -1px -1px 2px var(--S1forI);
+    color: #4f7af1;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    position: absolute;
+    bottom: 700px;
+    right: 698px;
+}
+
+#Home i:hover {
+    transform: scale(1.3);
+}
+
+#Home i:active {
+    transform: scale(0.9);
+}
+
+
+/*footer*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.col {
+    width: 25%;
+    padding: 0 30px;
+}
+
+.col h4 {
+    font-size: 20px;
+    color: goldenrod;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: purple;
+    height: 3px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col ul li p {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col ul li a:hover {
+    color: gold;
+    padding-left: 10px;
+}
+
+.outfoot {
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: -50px;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.outer-footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3f3f3f;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    text-transform: capitalize;
+    color: gold;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.outer-footer :not(:last-child) {
+    margin-right: 30px;
+}
+
+.outer-footer ul li a {
+    /* color:green; */
+    color: rgb(37, 182, 37);
+    text-decoration: none;
+}
+
+.outer-footer ul li p {
+    color: #8CBA80;
+    text-decoration: none;
+}
+
+.outer-footer ul li p a {
+    /* color:green; */
+    color: rgb(37, 182, 37);
+    text-decoration: none;
+}
+
+.outer-footer ul li a:hover {
+    /* color:rgb(37, 182, 37); */
+    color: chartreuse;
+}
+
+.quick-links {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.quick-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quick-items a {
+    padding: 0px 25px;
+}
+
+.quick-links ul li:not(:last-child) {
+    margin-right: 5px;
+}
+
+ ::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid rgb(199, 197, 197);
+    box-shadow: inset 0px 0px 5px rgb(197, 195, 195);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, rgb(100, 97, 97), grey);
+    border-radius: 1rem;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(270deg, grey, rgb(100, 97, 97), grey);
+    cursor: pointer;
+}
